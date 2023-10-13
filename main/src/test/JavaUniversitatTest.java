@@ -1,10 +1,11 @@
 package test;
 
 import main.Problem1.JavaUniversitat;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class JavaUniversitatTest {
 
@@ -12,10 +13,11 @@ public class JavaUniversitatTest {
     public void testFilterNichtAusreichendeNoten() {
         int[] noten = {70, 38, 42, 25, 30};
         ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(38);
         expected.add(25);
         expected.add(30);
 
-        Assert.assertEquals(expected, JavaUniversitat.filterNichtAusreichendeNoten(noten));
+        assertEquals(expected, JavaUniversitat.filterNichtAusreichendeNoten(noten));
     }
 
     @Test
@@ -23,7 +25,7 @@ public class JavaUniversitatTest {
         int[] noten = {80, 90, 70, 60, 50};
         double expected = 70.0;
 
-        Assert.assertEquals(expected, JavaUniversitat.berechneDurchschnitt(noten), 0.001);
+        assertEquals(expected, JavaUniversitat.berechneDurchschnitt(noten), 0.001);
     }
 
     @Test
@@ -36,14 +38,14 @@ public class JavaUniversitatTest {
         expected.add(50);
         expected.add(35);
 
-        Assert.assertEquals(expected, JavaUniversitat.rundeNotenAb(noten));
+        assertEquals(expected, JavaUniversitat.rundeNotenAb(noten));
     }
 
     @Test
     public void testFindeMaxAbgerundeteNote() {
-        int[] noten = {37, 42, 46, 50, 35};
-        int expected = 50;
+        int[] noten = {37, 42, 46, 68, 35};
+        int expected = 70;
 
-        Assert.assertEquals(expected, JavaUniversitat.findeMaxAbgerundeteNote(noten));
+        assertEquals(expected, JavaUniversitat.findeMaxAbgerundeteNote(noten));
     }
 }
