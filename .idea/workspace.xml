@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91ddedc-2806-452a-b7e5-961c059760ea" name="Changes" comment="commit - problem 4">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c91ddedc-2806-452a-b7e5-961c059760ea" name="Changes" comment="commit - problem 4 teste">
+      <change afterPath="$PROJECT_DIR$/main/src/main/Problem2/Problem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/src/test/Problem2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/test/ElektronikShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/ElektronikShopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/test/JavaUniversitatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/JavaUniversitatTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,41 +66,12 @@
       <recent name="main.Problem1" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.Problem2" />
       <recent name="main.Problem1" />
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ElektronikShopTest.testGesamtKostenNichtGenug">
-    <configuration name="ElektronicShopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ElektronicShopTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElektronikShopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ElektronikShopTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Problem2Test.testFindeMaxSumme">
     <configuration name="ElektronikShopTest.testGesamtKostenGenug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
@@ -135,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElektronikShopTest.testTeuersteGegenstand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Problem2Test.testFindeMaxSumme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +113,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ElektronikShopTest" />
-      <option name="METHOD_NAME" value="testTeuersteGegenstand" />
+      <option name="MAIN_CLASS_NAME" value="test.Problem2Test" />
+      <option name="METHOD_NAME" value="testFindeMaxSumme" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem2Test.testMaximaleZahl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Problem2Test" />
+      <option name="METHOD_NAME" value="testMaximaleZahl" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem2Test.testMinimaleZahl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Problem2Test" />
+      <option name="METHOD_NAME" value="testMinimaleZahl" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Problem2Test.testFindeMaxSumme" />
+        <item itemvalue="JUnit.Problem2Test.testMinimaleZahl" />
+        <item itemvalue="JUnit.Problem2Test.testMaximaleZahl" />
         <item itemvalue="JUnit.ElektronikShopTest.testGesamtKostenNichtGenug" />
         <item itemvalue="JUnit.ElektronikShopTest.testGesamtKostenGenug" />
-        <item itemvalue="JUnit.ElektronikShopTest" />
-        <item itemvalue="JUnit.ElektronikShopTest.testTeuersteGegenstand" />
-        <item itemvalue="JUnit.ElektronicShopTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +172,7 @@
       <updated>1697142554028</updated>
       <workItem from="1697142555102" duration="1176000" />
       <workItem from="1697178276926" duration="1032000" />
-      <workItem from="1697202108345" duration="3181000" />
+      <workItem from="1697202108345" duration="5556000" />
     </task>
     <task id="LOCAL-00001" summary="First commit - problem 1">
       <option name="closed" value="true" />
@@ -189,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697143722042</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit - problem 4 teste">
+      <option name="closed" value="true" />
+      <created>1697205361777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697205361777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit - problem 1" />
     <MESSAGE value="commit - problem 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit - problem 4" />
+    <MESSAGE value="commit - problem 4 teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit - problem 4 teste" />
   </component>
 </project>
