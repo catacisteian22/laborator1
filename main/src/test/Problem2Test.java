@@ -30,4 +30,12 @@ public class Problem2Test {
 
         assertEquals(expected, Problem2.findeMaxSumme(zahlenArray));
     }
+
+    @Test
+    public void testFindeMinSumme() {
+        int[] zahlenArray = {4, 8, 3, 10, 17};
+        int expected = 25;
+
+        assertEquals(expected, Problem2.findeMinSumme(zahlenArray));
+    }
 }
