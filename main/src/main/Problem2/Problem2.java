@@ -1,7 +1,5 @@
 package main.Problem2;
 
-import java.util.List;
-
 public class Problem2 {
 
     public static int maximaleZahl(int[] zahlenArray) {
@@ -25,10 +23,6 @@ public class Problem2 {
         }
         return kleinste;
     }
-    /*3. Finden Sie die maximale Summe von n-1 Zahlen.
-    z.B. [4, 8, 3, 10, 17] => 4 + 8 + 10 + 17 = 39
-    4. Finden Sie die minimale Summe von n-1 Zahlen.
-    z.B. [4, 8, 3, 10, 17] => 4 + 8 + 3 + 10 = 25*/
 
     public static int findeMaxSumme(int[] zahlenArray) {
         if (zahlenArray == null || zahlenArray.length < 2) {
@@ -46,7 +40,7 @@ public class Problem2 {
                 k++;
             }
         }
-        int maxSumme = summeElementeInArray(neueArray, neueArray.length);
+        int maxSumme = summedElementInArray(neueArray, neueArray.length);
         return maxSumme;
     }
 
@@ -66,16 +60,14 @@ public class Problem2 {
                 k++;
             }
         }
-        int minSumme = summeElementeInArray(neueArray, neueArray.length);
+        int minSumme = summedElementInArray(neueArray, neueArray.length);
         return minSumme;
     }
 
-    private static int summeElementeInArray(int[] arr, int n) {
-        // base or terminating condition
+    private static int summedElementInArray(int[] arr, int n) {
         if (n <= 0) {
             return 0;
         }
-        // Calling method recursively
-        return summeElementeInArray(arr, n - 1) + arr[n - 1];
+        return summedElementInArray(arr, n - 1) + arr[n - 1];
     }
 }
