@@ -3,6 +3,9 @@ package main.Problem2;
 public class Problem2 {
 
     public static int maximaleZahl(int[] zahlenArray) {
+        if (zahlenArray.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         int größte = Integer.MIN_VALUE;
 
         for (int zahl : zahlenArray) {
@@ -14,6 +17,9 @@ public class Problem2 {
     }
 
     public static int minimaleZahl(int[] zahlenArray) {
+        if (zahlenArray.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         int kleinste = Integer.MAX_VALUE;
 
         for (int zahl : zahlenArray) {

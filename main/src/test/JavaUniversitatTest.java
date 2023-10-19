@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class JavaUniversitatTest {
 
@@ -47,5 +48,11 @@ public class JavaUniversitatTest {
         int expected = 70;
 
         assertEquals(expected, JavaUniversitat.findeMaxAbgerundeteNote(noten));
+    }
+    @Test
+    public void testEmptyList(){
+        int[] noten = {};
+
+        assertThrows(IllegalArgumentException.class, () -> JavaUniversitat.findeMaxAbgerundeteNote(noten));
     }
 }

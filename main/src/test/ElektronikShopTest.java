@@ -4,6 +4,7 @@ import main.Problem4.ElektronikShop;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class ElektronikShopTest {
 
@@ -51,5 +52,12 @@ public class ElektronikShopTest {
         int expected = -1;
 
         assertEquals(expected, ElektronikShop.gesamtkosten(budget, tastaturen, usbLaufwerke));
+    }
+
+    @Test
+    public void testEmptyList(){
+        int[] tastaturPreise = {};
+
+        assertThrows(IllegalArgumentException.class, () -> ElektronikShop.billigsteTastatur(tastaturPreise));
     }
 }

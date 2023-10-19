@@ -2,7 +2,10 @@ package main.Problem3;
 
 public class Problem3 {
 
-    static int sumArrays(int[] a, int[] b, int n, int m) {
+    static int sumArrays(int[] num1, int[] num2, int n, int m) {
+        if (num1.length == 0 || num2.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         int[] sum = new int[n];
 
         int i = n - 1, j = m - 1, k = n - 1;
@@ -12,7 +15,7 @@ public class Problem3 {
         //weil wir die size der arrays in Wrapper Funktion schon vergleichen
         while (j >= 0) {
             // die Summe dem zugehörigen Element fur beide Arrays
-            s = a[i] + b[j] + carry;
+            s = num1[i] + num2[j] + carry;
 
             sum[k] = (s % 10);
 
@@ -26,7 +29,7 @@ public class Problem3 {
         //falls die Size der zweite Array is kleiner als der size der erste Array
         while (i >= 0) {
             //wir fugen den carry zu den ersten Array Elements
-            s = a[i] + carry;
+            s = num1[i] + carry;
             sum[k] = (s % 10);
             carry = s / 10;
 
@@ -60,6 +63,9 @@ public class Problem3 {
     }
 
     public static int berechneDifferenz(int[] num1, int[] num2) {
+        if (num1.length == 0 || num2.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         if (num1.length < num2.length) {
             return berechneDifferenz(num2, num1);
         }

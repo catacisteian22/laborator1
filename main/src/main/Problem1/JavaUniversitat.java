@@ -6,6 +6,9 @@ public class JavaUniversitat {
 
     // Methode, um nicht ausreichende Noten zu filtern
     public static ArrayList<Integer> filterNichtAusreichendeNoten(int[] noten) {
+        if (noten.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         ArrayList<Integer> nichtAusreichendeNoten = new ArrayList<>();
         for (int note : noten) {
             if (note < 40) {
@@ -17,6 +20,9 @@ public class JavaUniversitat {
 
     // Methode, um den Durchschnitt der Noten zu berechnen
     public static double berechneDurchschnitt(int[] noten) {
+        if (noten.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         int summe = 0;
         for (int note : noten) {
             summe += note;
@@ -26,6 +32,9 @@ public class JavaUniversitat {
 
     // Methode, um Noten abzurunden
     public static ArrayList<Integer> rundeNotenAb(int[] noten) {
+        if (noten.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         ArrayList<Integer> abgerundeteNoten = new ArrayList<>();
         for (int note : noten) {
             if (note >= 38 && note % 5 >= 3) {
@@ -39,6 +48,9 @@ public class JavaUniversitat {
 
     // Methode, um die maximale abgerundete Note zu finden
     public static int findeMaxAbgerundeteNote(int[] noten) {
+        if (noten.length == 0) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         int maxAbgerundeteNote = 0;
         for (int note : noten) {
             if (note >= 38 && note % 5 >= 3) {

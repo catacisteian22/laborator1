@@ -4,6 +4,7 @@ import main.Problem2.Problem2;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class Problem2Test {
 
@@ -37,5 +38,19 @@ public class Problem2Test {
         int expected = 25;
 
         assertEquals(expected, Problem2.findeMinSumme(zahlenArray));
+    }
+
+    @Test
+    public void testEmptyList(){
+        int[] zahlenArray = {};
+
+        assertThrows(IllegalArgumentException.class, () -> Problem2.minimaleZahl(zahlenArray));
+    }
+
+    @Test
+    public void testEmptyListMaxSumme() {
+        int[] zahlenArray = {1};
+
+        assertThrows(IllegalArgumentException.class, () -> Problem2.findeMaxSumme(zahlenArray));
     }
 }
