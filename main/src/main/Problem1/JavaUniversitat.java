@@ -50,19 +50,4 @@ public class JavaUniversitat {
         }
         return maxAbgerundeteNote;
     }
-    public static void main(String[] args) {
-        int[] noten = {84, 29, 38, 37, 63};
-
-        ArrayList<Integer> nichtAusreichendeNoten = JavaUniversitat.filterNichtAusreichendeNoten(noten);
-        System.out.println("Nicht ausreichende Noten: " + nichtAusreichendeNoten);
-
-        double durchschnitt = JavaUniversitat.berechneDurchschnitt(noten);
-        System.out.println("Durchschnitt: " + durchschnitt);
-
-        ArrayList<Integer> abgerundeteNoten = JavaUniversitat.rundeNotenAb(noten);
-        System.out.println("Abgerundete Noten: " + abgerundeteNoten);
-
-        int maxAbgerundeteNote = JavaUniversitat.findeMaxAbgerundeteNote(noten);
-        System.out.println("Maximale abgerundete Note: " + maxAbgerundeteNote);
-    }
 }

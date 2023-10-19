@@ -19,7 +19,7 @@ public class Problem3Test {
     @Test
     public void testDiffZahlen() {
         int[] zahl1 = {8, 3, 0, 0, 0, 0, 0, 0, 0};
-        int[] zahl2= {5, 4, 0, 0, 0, 0, 0, 0, 0};
+        int[] zahl2 = {5, 4, 0, 0, 0, 0, 0, 0, 0};
         int expected = 290000000;
 
         assertEquals(expected, Problem3.berechneDifferenz(zahl1, zahl2));

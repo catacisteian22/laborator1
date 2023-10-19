@@ -49,7 +49,7 @@ public class ElektronikShop {
         int billigsteTastatur = billigsteTastatur(tastaturen);
         int teuerstesUSB = teuersteUSB(usbLaufwerke, budget);
 
-        if (billigsteTastatur == Integer.MAX_VALUE || teuerstesUSB == -1) {
+        if ((billigsteTastatur + teuerstesUSB) >= budget) {
             return -1;
         }
 

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c91ddedc-2806-452a-b7e5-961c059760ea" name="Changes" comment="commit - problem 2 plus teste">
-      <change afterPath="$PROJECT_DIR$/main/src/main/Problem3/Problem3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/test/Problem3Test.java" afterDir="false" />
+    <list default="true" id="c91ddedc-2806-452a-b7e5-961c059760ea" name="Changes" comment="commit - problem 3 summe und differenz, aber Rezultat nur alt int">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/Problem1/JavaUniversitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/Problem1/JavaUniversitat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/main/Problem2/Problem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/Problem2/Problem2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/Problem3/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/Problem3/Problem3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/Problem4/ElektronikShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/Problem4/ElektronikShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/test/ElektronikShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/ElektronikShopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/test/Problem3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/test/Problem3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,7 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Problem3Test.testDiffZahlen">
+  <component name="RunManager" selected="JUnit.test in main">
     <configuration name="Problem3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Problem3.Problem3" />
       <module name="main" />
@@ -87,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem2Test.testFindeMinSumme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ElektronikShopTest.testGesamtKostenNichtGenug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +99,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Problem2Test" />
-      <option name="METHOD_NAME" value="testFindeMinSumme" />
+      <option name="MAIN_CLASS_NAME" value="test.ElektronikShopTest" />
+      <option name="METHOD_NAME" value="testGesamtKostenNichtGenug" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem3Test.testSummeZahlen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test in main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
         <pattern>
@@ -143,20 +146,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Problem3Test" />
-      <option name="METHOD_NAME" value="testSummeZahlen" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test in main" />
+        <item itemvalue="JUnit.ElektronikShopTest.testGesamtKostenNichtGenug" />
         <item itemvalue="JUnit.Problem3Test.testDiffZahlen" />
-        <item itemvalue="JUnit.Problem3Test.testSummeZahlen" />
         <item itemvalue="Application.Problem3" />
         <item itemvalue="JUnit.Problem3Test" />
-        <item itemvalue="JUnit.Problem2Test.testFindeMinSumme" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +172,8 @@
       <workItem from="1697142555102" duration="1176000" />
       <workItem from="1697178276926" duration="1032000" />
       <workItem from="1697202108345" duration="6380000" />
-      <workItem from="1697472371358" duration="4509000" />
+      <workItem from="1697472371358" duration="4785000" />
+      <workItem from="1697737037709" duration="5057000" />
     </task>
     <task id="LOCAL-00001" summary="First commit - problem 1">
       <option name="closed" value="true" />
@@ -205,18 +207,38 @@
       <option name="project" value="LOCAL" />
       <updated>1697207951724</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit - problem 3 summe un differenz, aber Rezultat nur alt int">
+      <option name="closed" value="true" />
+      <created>1697484152966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697484152966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit - problem 1" />
     <MESSAGE value="commit - problem 4" />
     <MESSAGE value="commit - problem 4 teste" />
     <MESSAGE value="commit - problem 2 plus teste" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit - problem 2 plus teste" />
+    <MESSAGE value="commit - problem 3 summe un differenz, aber Rezultat nur alt int" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit - problem 3 summe un differenz, aber Rezultat nur alt int" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -225,6 +247,16 @@
           <url>file://$PROJECT_DIR$/main/src/test/Problem3Test.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/main/src/main/Problem4/ElektronikShop.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/main/src/test/ElektronikShopTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

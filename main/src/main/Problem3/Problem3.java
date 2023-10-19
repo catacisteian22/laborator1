@@ -2,16 +2,16 @@ package main.Problem3;
 
 public class Problem3 {
 
-    static int sumArrays(int a[], int b[], int n, int m) {
+    static int sumArrays(int[] a, int[] b, int n, int m) {
         int[] sum = new int[n];
 
         int i = n - 1, j = m - 1, k = n - 1;
 
         int carry = 0, s = 0;
-        //befor wir der Anfang der Array erreichen, wir vergleichen nur fur das zweite array,
+        //bevor wir der Anfang der Array erreichen, wir vergleichen nur fur das zweite array,
         //weil wir die size der arrays in Wrapper Funktion schon vergleichen
         while (j >= 0) {
-            // die Summe der zugehorigen Element fur beide Arrays
+            // die Summe dem zugehörigen Element fur beide Arrays
             s = a[i] + b[j] + carry;
 
             sum[k] = (s % 10);
@@ -51,7 +51,7 @@ public class Problem3 {
 
     // Wrapper Funktion
     public static int berechneSumme(int[] a, int[] b, int n, int m) {
-        //machen das erste Array, welche hat das grosste Anzaghl von Elemente
+        //machen das erste Array, welche hat die größte Anzahl von Elemente
         if (n >= m)
             return sumArrays(a, b, n, m);
 
@@ -61,23 +61,25 @@ public class Problem3 {
 
     public static int berechneDifferenz(int[] num1, int[] num2) {
         if (num1.length < num2.length) {
-            return -berechneDifferenz(num2, num1);
+            return berechneDifferenz(num2, num1);
         }
 
         if (num1.length == num2.length) {
+            // prüfen, wer grosser ist
             int idx = 0;
             while (idx < num1.length) {
                 if (num1[idx] > num2[idx]) break;
+
                 if (num1[idx] < num2[idx]) {
-                    return -berechneDifferenz(num2, num1);
+                    return berechneDifferenz(num2, num1);
                 }
+
                 idx++;
             }
         }
 
         int ptr1 = num1.length - 1;
         int ptr2 = num2.length - 1;
-        int result = 0;
         while (ptr1 >= 0 && ptr2 >= 0) {
             int digit1 = num1[ptr1--];
             int digit2 = num2[ptr2--];
@@ -90,7 +92,21 @@ public class Problem3 {
                 diff = digit1 - digit2;
             }
 
-            result = result * 10 + diff;
+            num1[ptr1 + 1] = diff;
+        }
+
+        int result = 0;
+        int last = 0;
+        boolean zeroes = true;
+        while (last < num1.length) {
+            int num = num1[last++];
+            if (num > 0) {
+                zeroes = false;
+            }
+
+            if (!zeroes) {
+                result = result * 10 + num;
+            }
         }
 
         return result;

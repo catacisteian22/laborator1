@@ -32,16 +32,14 @@ public class Problem2 {
         int kleinste = minimaleZahl(zahlenArray);
 
         int[] neueArray = new int[zahlenArray.length - 1];
-        int j = kleinste;
 
         for (int i = 0, k = 0; i < zahlenArray.length; i++) {
-            if (zahlenArray[i] != j) {
+            if (zahlenArray[i] != kleinste) {
                 neueArray[k] = zahlenArray[i];
                 k++;
             }
         }
-        int maxSumme = summedElementInArray(neueArray, neueArray.length);
-        return maxSumme;
+        return summedElementInArray(neueArray, neueArray.length);
     }
 
     public static int findeMinSumme(int[] zahlenArray) {
@@ -52,16 +50,14 @@ public class Problem2 {
         int größte = maximaleZahl(zahlenArray);
 
         int[] neueArray = new int[zahlenArray.length - 1];
-        int j = größte;
 
         for (int i = 0, k = 0; i < zahlenArray.length; i++) {
-            if (zahlenArray[i] != j) {
+            if (zahlenArray[i] != größte) {
                 neueArray[k] = zahlenArray[i];
                 k++;
             }
         }
-        int minSumme = summedElementInArray(neueArray, neueArray.length);
-        return minSumme;
+        return summedElementInArray(neueArray, neueArray.length);
     }
 
     private static int summedElementInArray(int[] arr, int n) {

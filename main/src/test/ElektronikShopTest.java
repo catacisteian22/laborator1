@@ -45,11 +45,11 @@ public class ElektronikShopTest {
 
     @Test
     public void testGesamtKostenNichtGenug(){
-        int buget = 60;
+        int budget = 60;
         int[] tastaturen = {40, 50, 60};
         int[] usbLaufwerke = {21, 35};
         int expected = -1;
 
-        assertEquals(expected, ElektronikShop.gesamtkosten(buget, tastaturen, usbLaufwerke));
+        assertEquals(expected, ElektronikShop.gesamtkosten(budget, tastaturen, usbLaufwerke));
     }
 }
